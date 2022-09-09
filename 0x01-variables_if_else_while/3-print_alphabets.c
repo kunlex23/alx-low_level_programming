@@ -1,44 +1,20 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char l;
+char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
 
-l = 'a';
-while (l <= 'z')
+for (i = 0; i <= 51; i++)
 {
-putchar(l);
-l++;
-}
-l = 'A';
-while (l <= 'Z')
-{
-putchar(l);
-													l++;
-													}
-putchar('\n');
-return (0);
-}
-{
-char l;
-l = 'a';
-while (l <= 'z')
-{
-putchar(l);
-l++;
-}
-l = 'A';
-while (l <= 'Z')
-{
-putchar(l);
-
-l++;
-}
+putchar(letters[i]);
+										}
 putchar('\n');
 return (0);
 }
