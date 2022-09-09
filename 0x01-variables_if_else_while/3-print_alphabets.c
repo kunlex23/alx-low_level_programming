@@ -7,14 +7,38 @@
  */
 int main(void)
 {
-char c = 'a';
+char l;
 
-while (c <= 'z')
+l = 'a';
+while (l <= 'z')
 {
-putchar(c);
-c++;
+putchar(l);
+l++;
+}
+l = 'A';
+while (l <= 'Z')
+{
+putchar(l);
+													l++;
+													}
+putchar('\n');
+return (0);
+}
+{
+char l;
+l = 'a';
+while (l <= 'z')
+{
+putchar(l);
+l++;
+}
+l = 'A';
+while (l <= 'Z')
+{
+putchar(l);
+
+l++;
 }
 putchar('\n');
 return (0);
 }
-
