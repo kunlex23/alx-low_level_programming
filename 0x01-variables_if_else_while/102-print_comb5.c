@@ -9,28 +9,44 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-(
-int n, m, d1, d2, d3, d4;
-for (n = 0; n <= 98; n++)
 {
-for (m = n + 1; m <= 99; m++)
+int c;
+int d;
+int e;
+int f = 0;
+while (f < 10)
 {
-di = n / 10;
-d2 = n % 10;
-putchar(d1 + '0');
-putchar(d2 + '0');
+e = 0;
+while (e < 10)
+{
+d = 0;
+while (d < 10)
+{
+c = 0;
+while (c < 10)
+{
+if (!(f == c && e == d))
+{
+putchar('0' + f);
+putchar('0' + e);
 putchar(' ');
-d3 = m / 10;
-d4 = m % 10;
-putchar(d3 + '0');
-putchar(d4 + '0');
-if (n != 98 || m != 99)
+putchar('0' + d);
+putchar('0' + c);
+if (!(f + e == 18 && c + d == 17 && d == 9))
 {
 putchar(',');
 putchar(' ');
 }
 }
+c++;
+}
+d++;
+}
+e++;
+}
+f++;
 }
 putchar('\n');
 return (0);
 }
+
