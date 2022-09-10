@@ -10,43 +10,56 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e;
-int f = 0;
-while (f < 10)
+int i, j, k, l;
+i = j = k = 48;
+l = 49;
+while  ((i < 58))
 {
-e = 0;
-while (e < 10)
+putchar(i); 
+putchar(j); 
+putchar(32); 
+putchar(k);
+putchar(l);
+if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
 {
-d = 0;
-while (d < 10)
+putchar('\n'); 
+i++;
+}
+else
 {
-c = 0;
-while (c < 10)
+putchar(44);
+putchar(32);
+if ((k == 57) && (l == 57))
 {
-if (!(f == c && e == d))
+if (j < 56)
 {
-putchar('0' + f);
-putchar('0' + e);
-putchar(' ');
-putchar('0' + d);
-putchar('0' + c);
-if (!(f + e == 18 && c + d == 17 && d == 9))
+l = ++j + 1;
+k = i;
+}
+else if (j == 56)
 {
-putchar(',');
-putchar(' ');
+j++; 
+k = i + 1;
+l = 48;
+}
+else if (j == 57)
+{
+j = 48; 
+l = 49; 
+k = ++i;
 }
 }
-c++;
+else if (l < 57)
+{
+l++;
 }
-d++;
+else
+{
+l = 48; 
+k++;
 }
-e++;
 }
-f++;
 }
-putchar('\n');
-return (0);
+return  (0);
 }
 
