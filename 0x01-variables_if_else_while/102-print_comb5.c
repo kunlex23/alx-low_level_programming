@@ -8,53 +8,27 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int n, m, d1, d2, d3, d4;
+for (n = 0; n <= 98; n++)
 {
-int i, j, k, l;
-
-i = j = k = 48;
-l = 49;
-while  ((i < 58))
+for (m = n + 1; m <= 99; m++)
 {
-putchar(i); 
-putchar(j); 
-putchar(32); 
-putchar(k); 
-putchar(l);
-if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+di = n / 10;
+d2 = n % 10;
+putchar(d1 + '0');
+putchar(d2 + '0');
+putchar(' ');
+d3 = m / 10;
+d4 = m % 10;
+putchar(d3 + '0');
+putchar(d4 + '0');
+if (n != 98 || m != 99)
 {
-putchar('\n'); i++;
-}
-else
-{
-putchar(44); 
-putchar(32);
-if ((k == 57) && (l == 57))
-{
-if (j < 56)
-{
-l = ++j + 1; k = i;
-}
-else if (j == 56)
-{
-j++; k = i + 1; l = 48;
-}
-else if (j == 57)
-{
-j = 48; 
-l = 49; 
-k = ++i;
-}
-}
-else if (l < 57)
-{
-l++;
-}
-else
-{
-l = 48; k++;
+putchar(',');
+putchar(' ');
 }
 }
 }
+putchar('\n');
 return (0);
 }
