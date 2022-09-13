@@ -22,4 +22,3 @@ n--;
 printf("98");
 putchar('\n');
 }
-
