@@ -19,7 +19,7 @@ for (i = 1; i <= 100; i++)
 if (i == 100)
 printf("%s", b);
 else if ((i % 3 == 0) && (i % 5 == 0))
-rintf("%s ", fb);
+printf("%s ", fb);
 else if (i % 3 == 0)
 printf("%s ", f);
 else if (i % 5 == 0)
