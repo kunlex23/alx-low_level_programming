@@ -1,6 +1,6 @@
-nclude <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * print_all - Entry Point
  * c = char, i = int, f = float, s = char * (if null print (nil))
@@ -48,4 +48,3 @@ n++;
 printf("\n");
 va_end(valist);
 }
-
