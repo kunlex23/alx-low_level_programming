@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . && git commit -m"Debug push" && git push
+git add . && git commit -m"dingly_linked_list push" && git push
